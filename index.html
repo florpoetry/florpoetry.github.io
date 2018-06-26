@@ -1,291 +1,431 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <title>Flor Poetry</title>
-      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>flor poetry</title>
+<!-- Bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Animation Libraries -->
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/magic.min.css">
+<!-- Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900%7COpen+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+<!-- Fonts Icons -->
+<link rel="stylesheet" href="css/custom-icons.css">
+<link rel="stylesheet" href="css/et-line-icons.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!-- Owl Carousel -->
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<!-- Nivo Lightbox -->
+<link rel="stylesheet" href="css/nivo-lightbox/nivo-lightbox.css">
+<link rel="stylesheet" href="css/nivo-lightbox/lightbox-theme.css">
+<!-- Animated Headlines -->
+<link rel="stylesheet" href="css/animated-hedlines.css">
+<!-- Youtube Background Player -->
+<link rel="stylesheet" href="css/YTPlayer.css">
+<!-- Main Styles -->
+<link href="css/styles.css" rel="stylesheet">
+<!-- Theme -->
+<link href="css/theme/red.css" rel="stylesheet" data-color="" id="theme">
+<!-- Animsition -->
+<link href="css/animsition.min.css" rel="stylesheet">
+<!-- Favicon (retina) -->
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 
-      <!-- Favicon ================== -->
-      <!-- Standard -->
-      <link rel="shortcut icon" href="img/favicon-144.png">
-      <!-- Retina iPad Touch Icon-->
-      <link rel="apple-touch-icon" sizes="144x144" href="img/favicon-144.png">
-      <!-- Retina iPhone Touch Icon-->
-      <link rel="apple-touch-icon" sizes="114x114" href="img/favicon-114.png">
-      <!-- Standard iPad Touch Icon-->
-      <link rel="apple-touch-icon" sizes="72x72" href="img/favicon-72.png">
-      <!-- Standard iPhone Touch Icon-->
-      <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-57.png">
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+</head>
 
-      <!--  Resources style ================== -->
-      <link href="css/mirage.css" rel="stylesheet" type="text/css" media="all"/>
-
-    </head>
-    <body>
-      <section id="parent" class="animsition">
-
+<body>
+<!-- Page Wrapper -->
+<div id="page" class="animsition" data-loader-type="loader2" data-page-loader-text="Blooming" data-animsition-in="zoom-in" data-animsition-out="fade-out-up-sm" style="transform-origin: 50% 50vh;">
+  <div id="top"></div>
+  <!-- Home Section -->
+  <section id="home-section" class="home-section full-screen home-bg">
+    <div class="parallax-hero full-screen" data-top="transform: translate3d(0px, 0px, 0px)" data-top-bottom="transform: translate3d(0px, -200px, 0px)" data-anchor-target="#home-section">
+      <div class="hs-content">
+        <div class="hs-content-inner">
+          <div id="fss" class="fss full-screen "></div>
+          <div class="padding-top-30 init-animation-1 delay0-4s">
+            <h2 class="hs-text-5">Poetry, Music, and Art</h2>
+          </div>
+          <div class="init-animation-1 delay0-4s">
+            <h1 class="hs-text-11">BLOOM :)</h1>
+          </div>
+          <div class="in-page-scroll margin-top-40 init-animation-1 delay0-6s"> <a href="#about-section" class="btn btn-animated btn-split btn-white-transparent ripple-alone " data-text="grow with us"><span>grow with us</span></a> </div>
         </div>
+        <span class="scroll-down-arrow in-page-scroll" data-start="display: inline-block" data-100-start="display: none"> <a href="#about-section" class="ci-icon-uniE930 init-animation-1 delay1-8s"></a> </span> </div>
+    </div>
+  </section>
+  <!--/ End Home Section --> 
+  <!-- Navbar -->
+  <div class="position-relative"> 
+    <!-- sticky: 1) remove"transp-nav" class, add class="sticky-navbar" to #nav-wrapper | 2) remove navbar-fixed-top class from #nav [and navbar-transparent class too] -->
+    <div id="nav-wrapper" class="sticky-navbar">
+      <nav id="nav" class="navbar navbar-default ripple-group-parent " role="navigation"> 
+        <!-- progressbar -->
+        <div id="scroll-progressbar" class="scroll-progressbar">
+          <div> <span class="scroll-shadow"></span> </div>
+        </div>
+        <div class="container in-page-scroll"> 
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" id="animated-navicon" class="navbar-toggle" data-toggle="collapse" data-target="#mobile-navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand ripple-group" href="#top">
+            <div class="navbar-logo pull-left"> <img src="img/florlogo-s.png" alt="logo" /> </div>
+            </a> </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="mobile-navbar-collapse">
+            <ul class="nav navbar-nav navbar-right cl-effect-5">
+              <li> <a class="ripple-group" href="#top"> <span data-hover="home">home</span> </a> </li>
+              <li> <a class="ripple-group" href="#about-section"> <span data-hover="about">about</span> </a> </li>
+              <li> <a class="ripple-group" href="#exec-section"> <span data-hover="exec">exec</span> </a> </li>
+              <li> <a class="ripple-group animsition-link" href="blog.html"> <span data-hover="blog">blog</span> </a> </li>
+              <li> <a class="ripple-group" href="https://shop.spreadshirt.com/flor-poetry/"> merch </a> </li>
+              <li> <a class="ripple-group" href="#contact-section"> <span data-hover="contact">contact</span> </a> </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse --> 
+        </div>
+        <!-- /.container --> 
+      </nav>
+    </div>
+  </div>
+  <!--/ End Navbar -->
+  <div id="page-2"> 
+    <!-- About Section -->
+    <section id="about-section" class="about-section section">
+      <div class="container">
+        <div class="section-title">
+          <div class=" section-title-more"> first you should know </div>
+          <div>
+            <h2 class="section-title-heading">about <span>flor Poetry</span></h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 wow fadeInUp margin-bottom-xs-40">
+            <blockquote class=" about-quote wow fadeInUp" data-wow-delay="0s">
+              <p>"Creativity is putting your imagination to work, and it's produced the most extraordinary results in human culture. 
+"</p>
+              <footer class="">Ken Robinson </footer>
+            </blockquote>
+          </div>
+          <!--/.col -->
+          <div id="skillbars" class="skillbars col-sm-6">
+            <div class="skillbar-container wow fadeInUp animated" data-wow-delay="0s">
+            <p class="section-text wow fadeInUp" data-wow-delay=".3s">Flor Poetry was a vision by founder Edgar Cuevas. Edgar envisions a campus full of passionate artists expressing themselves through a medium of poetry.</p>
 
-        <div id="leftSide" class="color">
+            </div>
+            <!--/ End Skill Bar -->
+            <div class="skillbar-container wow fadeInUp animated" data-wow-delay=".3s">
 
-          <div id="container"></div>
-          <div id="home" class="center col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-
-            <div class="h-content  text-center top-12">
-              <img src="img/model.png" alt="logo" class="quick fadeIn align- relative mb30 main-logo" />
-
-              <h4 class="mid animated fadeInUp fw700 mb20">COMING SOON!</h4>
-              <h1 class="mid animated fadeInUp  fw700">Our passion is self-discovery through poetry</h1>
-              <iframe src="https://open.spotify.com/embed/user/shifter.chied/playlist/5CBmV2w6tqKNKJX5R9XAwK" width="500" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
-<!--
-              <div class="mt40 slow animated fadeInUp">
-                <div class="social_tab inline quick fadeIn">
-                  <ul class="social_icons">
-                    <li><a href="photography.html#"><i class="ti-facebook "></i></a></li>
-                    <li><a href="photography.html#"><i class="ti-twitter-alt "></i></a></li>
-                    <li><a href="photography.html#"><i class="ti-instagram "></i></a></li>
-                  </ul>
+            </div>
+            <!--/ End Skill Bar -->
+            <div class="skillbar-container wow fadeInUp animated" data-wow-delay=".6s">
+            </div>
+            <!--/ End Skill Bar --> 
+          </div>
+          <!--/.col --> 
+        </div>
+        <!--/.row --> 
+      </div>
+      <!--/.container --> 
+    </section>
+    <!--/ End About Section -->
+    <hr />
+    <hr />
+    <hr />
+    
+    <!-- exec Section -->
+    <section id="exec-section" class="exec-section section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="section-title">
+              <div class=" section-title-more"> get to know our </div>
+              <div>
+                <h2 class="section-title-heading"><span>exec </span>members</h2>
+              </div>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-sm-6 margin-bottom-xs-40">
+            <p class="section-text">flor poetry is proud to be led by a diverse group of people</p>
+          </div>
+        </div>
+        <!-- /.col --> 
+        <!-- /.row --> 
+        <!-- Team Items -->
+        <div class="team-items"> 
+          <!-- Team Carousel -->
+          <div id="team-carousel" class="team-carousel owl-carousel carousel dots-under"> 
+            <!-- Team Item -->
+            <div class="team-item"> 
+              <!-- Team Item Image -->
+              <div class="team-item-img"> <img src="img/team/edgar.jpg" alt="team member" /> </div>
+              <!--/ End Team Item Imagee --> 
+              <!-- Team Item Name -->
+              <div class="team-item-name font-second">
+                <h4 class="">edgar cuevas</h4>
+                <span>president</span> </div>
+              <!--/ End Team Item Name --> 
+              <!-- Team Item Info -->
+              <div class="team-item-info">
+                <div class="team-item-text">
+                  <h3 class="font-second">About <span>Me ..</span></h3>
+                  <p>Computer Science & Philosophy</p>
                 </div>
               </div>
--->
-
+              <!--/ End Team Item Info --> 
+            </div>
+            <!--/ End Team Item --> 
+            <!-- Team Item -->
+            <div class="team-item"> 
+              <!-- Team Item Image -->
+              <div class="team-item-img"> <img src="img/team/kathleen.jpeg" alt="team member" /> </div>
+              <!--/ End Team Item Image --> 
+              <!-- Team Item Name -->
+              <div class="team-item-name font-second">
+                <h4 class="">Kathleen Dowling</h4>
+                <span>Vice President</span> </div>
+              <!--/ End Team Item Name --> 
+              <!-- Team Item Info -->
+              <div class="team-item-info">
+                <div class="team-item-text">
+                  <h3 class="font-second"><span>About</span> Me...</h3>
+                  <p>Speech and Hearing Science</p>
+                </div>
               </div>
+              <!--/ End Item Info --> 
             </div>
-
-
-        </div>
-
-
-        <div id="rightSide" class="visible">
-
-          <div class="background-img-holder percent84">
-            <img src="img/lost-places-pforphoto-leave-factory-162379.jpeg" alt="This is my work">
+            <!--/ End Team Item --> 
+            <!-- Team Item -->
+            <div class="team-item"> 
+              <!-- Team Item Image -->
+              <div class="team-item-img"> <img src="img/team/szymon.jpg" alt="team member" /> </div>
+              <!--/ End Team Item Image --> 
+              <!-- Team Item Name -->
+              <div class="team-item-name font-second">
+                <h4 class="">Szymon Kaminski</h4>
+                <span>Treasurer</span> </div>
+              <!--/ End Team Item Name --> 
+              <!-- Team Item Info -->
+              <div class="team-item-info">
+                <div class="team-item-text">
+                  <h3 class="font-second">About <span>Me...</span></h3>
+                  <p>Political Science & Global Studies</p>
+                </div>
+              </div>
+              <!--/ End Item Info --> 
+            </div>
+            <!--/ End Team Item --> 
+            <!-- Team Item -->
+            <div class="team-item"> 
+              <!-- Team Item Image -->
+              <div class="team-item-img"> <img src="img/team/rebecca.jpg" alt="team member" /> </div>
+              <!--/ End Team Item Image --> 
+              <!-- Team Item Name -->
+              <div class="team-item-name font-second">
+                <h4 class="">Rebecca Jungels</h4>
+                <span>Secretary</span> </div>
+              <!--/ End Team Item Name --> 
+              <!-- Team Item Info -->
+              <div class="team-item-info">
+                <div class="team-item-text">
+                  <h3 class="font-second"><span>About</span>Me...</h3>
+                  <p>Community Health</p>
+                </div>
+              </div>
+              <!--/ End Item Info --> 
+            </div>
+            <!--/ End Team Item --> 
+            <!-- Team Item -->
+            <div class="team-item"> 
+              <!-- Team Item Image -->
+              <div class="team-item-img"> <img src="img/team/monika.jpg" alt="team member" /> </div>
+              <!--/ End Team Item Image --> 
+              <!-- Team Item Name -->
+              <div class="team-item-name font-second">
+                <h4 class="">Monika Spytek</h4>
+                <span>Director of Communications</span> </div>
+              <!--/ End Team Item Name --> 
+              <!-- Team Item Info -->
+              <div class="team-item-info">
+                <div class="team-item-text">
+                  <h3 class="font-second"><span>About</span>Me...</h3>
+                  <p>Systems Engineering</p>
+                </div>
+              </div>
+              <!--/ End Item Info --> 
+            </div>
+            <!--/ End Team Item --> 
           </div>
-
-        
-            </div>
-
-
-            <footer class="mt70 mb50">
-              <p class="">&copy; 2018 ShifterXChi Productions <i class="ion-heart"></i> </p>
-              <!-- <div class="social pull-right">
-                <i class="up ion-social-facebook"></i>
-                <i class="up ion-social-twitter"></i>
-              </div> -->
-            </footer>
-
-          </div>
-
+          <!--/ End Team Carousel --> 
         </div>
-      </section>
-
-
-      <!-- Root element of PhotoSwipe. Must have class pswp. -->
-      <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-        <!-- Background of PhotoSwipe.
-             It's a separate element as animating opacity is faster than rgba(). -->
-        <div class="pswp__bg"></div>
-
-        <!-- Slides wrapper with overflow:hidden. -->
-        <div class="pswp__scroll-wrap">
-
-            <!-- Container that holds slides.
-                PhotoSwipe keeps only 3 of them in the DOM to save memory.
-                Don't modify these 3 pswp__item elements, data is added later on. -->
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
+        <!--/ End Team Items --> 
+      </div>
+      <!-- /.container --> 
+    </section>
+    <!--/ End Team Section -->
+    <hr />
+   
+    <hr />
+    <!-- Blog Section -->
+    <section id="blog-section" class="blog-section section">
+      <div class="container">
+        <div class="section-title">
+          <div class=" section-title-more"> Check out </div>
+          <div>
+            <h1 class="section-title-heading">our <span>poetry</span></h1>
+          </div>
+        </div>
+        <div class="row"> 
+          <!-- blog item -->
+          <article class="blog-post-preview margin-bottom-xs-40 col-sm-6"> <a href="poems/callmeanatheist.html" class="blog-post-preview-link animsition-link" data-animsition-out="fade-out-up-sm" data-animsition-out-duration="500">
+            <div class="blog-post-preview-img"> <img class="parallax-img img-responsive" src="https://i.imgur.com/gnHD2em.jpg" alt="" data-center="transform: translate3d(0px, -50%, 0px)" data-top-bottom="transform: translate3d(0px, -10%, 0px)" data-bottom-top="transform: translate3d(0px, -90%, 0px)"> </div>
+            <div>
+              <h2 class="blog-post-preview-title font-second">call me an <span>atheist</span></h2>
             </div>
-
-            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-            <div class="pswp__ui pswp__ui--hidden">
-
-                <div class="pswp__top-bar">
-
-                    <!--  Controls are self-explanatory. Order can be changed. -->
-                    <div class="pswp__counter"></div>
-                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                    <button class="pswp__button pswp__button--share" title="Share"></button>
-                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                          <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                          </div>
+            <div class="blog-post-preview-date font-second">MAR '16</div>
+            <div class="blog-post-preview-text">
+              <p>Call Me An Atheist is Edgar Cuevas' debut to slam poetry exploring concepts of depression and suicidal ideation.</p>
+            </div>
+            </a> </article>
+          <!--/ End blog item --> 
+          <!-- blog item -->
+          <article class="blog-post-preview col-sm-6"> <a href="poems/waves.html" class="blog-post-preview-link animsition-link" data-animsition-out="fade-out-up-sm" data-animsition-out-duration="500">
+            <div class="blog-post-preview-img"> <img class="parallax-img img-responsive" src="https://i.imgur.com/j6oOLPX.jpg" alt="" data-center="transform: translate3d(0px, -50%, 0px)" data-top-bottom="transform: translate3d(0px, -10%, 0px)" data-bottom-top="transform: translate3d(0px, -90%, 0px)"> </div>
+            <div>
+              <h2 class="blog-post-preview-title font-second">Waves <span> <3 </span></h2>
+            </div>
+            <div class="blog-post-preview-date font-second">JUN '18 </div>
+            <div class="blog-post-preview-text">.
+              <p>Waves is a love poem for my girlfriend</p>
+            </div>
+            </a> </article>
+          <!--/ End blog item --> 
+        </div>
+        <!--/ .row -->
+        <div class="padding-top-80 text-center"> <a href="blog.html" class="btn btn-animated btn-split btn-default ripple-alone animsition-link" data-animsition-out="fade-out-up-sm" data-animsition-out-duration="500" data-text="see all posts"><span>go to the blog</span></a> </div>
+      </div>
+      <!--/ .container --> 
+    </section>
+    <!--/ End Blog Section --> 
+    <!-- Contact Section -->
+           <section id="contact-section" class="section contact-section">
+                <div class="container">
+                    <div class="section-title">
+                        <div class=" section-title-more">
+                            wanna say hello?
+                        </div>
+                        <div>
+                            <h2 class="section-title-heading"><span>contact</span> us</h2>
                         </div>
                     </div>
+                    <div class="row padding-bottom-sm-90">
+                        <div class="col-sm-4">
+                            <div class="contact-item margin-bottom-xs-40"><i class="icon-phone"></i>
+                                <p>Phone: (773) 727-9507
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="contact-item margin-bottom-xs-40"><i class="icon-map-pin"></i>
+                                <p>201 N Goodwin Ave.
+                                    <br />Urbana, IL 61801</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="contact-item margin-bottom-xs-40"><i class="icon-envelope"></i>
+                                <p>florpoetry@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                            <div class="padding-top-80 text-center"> <a href="http://eepurl.com/dzcxC9" class="btn btn-animated btn-split btn-default ripple-alone animsition-link" data-animsition-out="fade-out-up-sm" data-animsition-out-duration="500" data-text="Join Us"><span>Thank You</span></a> </div>
                 </div>
-
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
+                <!--/ .container -->
+            </section>
+            <!--/ End Contact Section -->
+            <!--/ Map Section -->
+            <div id="map-section" class="map-section">
+                <!-- map opener -->
+                <div id="map-opener" class="map-mask">
+                    <div class="map-opener">
+                        <div class="font-second">locate us on the map<i class="ci-icon-uniE930"></i></div>
+                        <div class="font-second">close the map<i class="ci-icon-uniE92F"></i></div>
+                    </div>
                 </div>
-
-                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                </button>
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                </button>
-
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
+                <!--/ End map opener -->
+                <div id="google-map">
+                    <div id="map-canvas" data-address="201 N Goodwin Ave, Urbana, IL 61801, USA"></div>
+                    <div id="map-zoom-in"></div>
+                    <div id="map-zoom-out"></div>
                 </div>
             </div>
+            <!--/ End Map Section -->
+            <!-- Footer Section -->
+            <footer class="footer-section section no-padding-bottom">
+                <!-- footer logo -->
+                <div class="footer-logo">
+                    <img src="img/florlogo.png" alt="logo" />
+
+                </div>
+                <!--/ End footer logo -->
+                <!-- Social icons -->
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/florpoetry" class="fa fa-facebook-square wow fadeIn" data-wow-offset="150" data-wow-delay="0s"></a>
+                    <a href="https://www.instagram.com/florpoetry/" class="fa fa-instagram wow fadeIn" data-wow-offset="150" data-wow-delay=".15s"></a>
+                    <a href="https://open.spotify.com/user/7rlpmnskpjax4rejzsr32p02p?si=uAANsf0DS6m0vdkZECgrUw" class="fa fa-spotify wow fadeIn" data-wow-offset="150" data-wow-delay=".15s"></a>
+
+                    <a href="https://www.youtube.com/channel/UCrmwcU6b8eb-eN2ReJ8b_lg" class="fa fa-youtube-play wow fadeIn" data-wow-offset="150" data-wow-delay=".6s"></a>
+                </div>
+                <!--/ End Social icons -->
+                <!-- go top pop-up -->
+                <div id="go-top" class="go-top go-top-out in-page-scroll">
+                    <div class="circle1"></div>
+                    <a href="#top" class="square"><span></span></a>
+                    <div class="rectangle"></div>
+                    <div class="circle2"></div>
+                </div>
+                <!--/ End go top pop-up -->
+                <div class="footer-bottom">
+                    <!-- Copyright -->
+                    <a class="footer-bottom-text font-second" href="http://edgarcuevas.me/" target="_blank">©2018 flor poetry | Designed by Edgar Cuevas</a>
+                    <!-- End Copyright -->
+                </div>
+            </footer>
+            <!--/ End Footer Section -->
         </div>
-      </div>
+        <!--/ #page-2 -->
+    </div>
+    <!--/ #page -->
+    <!-- JS Scripts -->
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.min.js"></script>
+    <script src="js/jquery.animsition.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/skrollr.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/animateSlider.js"></script>
+    <script src="js/animated-headlines.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/jquery.vide.min.js"></script>
+    <script src="js/jquery.particleground.min.js"></script>
+    <script src="js/fss.min.js"></script>
+    <script src="js/fssinit.js"></script>
+    <script src="js/retina.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/nivo-lightbox.min.js"></script>
+    <script src="js/contactForm.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="js/scripts.min.js"></script>
+    <!--/ End JS Scripts -->
+</body>
 
-      <script src="js/jquery-1.11.3.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/animsition.min.js"></script>
-      <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-      <script src="js/jquery.countdown.min.js"></script>
-      <script src="js/photoswipe.min.js"></script>
-      <script src="js/photoswipe-ui-default.min.js"></script>
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/sketch.js"></script>
-      <script type="text/javascript">
-      // ----------------------------------------
-      // Particle
-      // ----------------------------------------
-
-      function Particle( x, y, radius ) {
-      this.init( x, y, radius );
-      }
-
-      Particle.prototype = {
-
-      init: function( x, y, radius ) {
-
-          this.alive = true;
-
-          this.radius = radius || 10;
-          this.wander = 0.15;
-          this.theta = random( TWO_PI );
-          this.drag = 0.92;
-          this.color = '#fff';
-
-          this.x = x || 0.0;
-          this.y = y || 0.0;
-
-          this.vx = 0.0;
-          this.vy = 0.0;
-      },
-
-      move: function() {
-
-          this.x += this.vx;
-          this.y += this.vy;
-
-          this.vx *= this.drag;
-          this.vy *= this.drag;
-
-          this.theta += random( -0.5, 0.5 ) * this.wander;
-          this.vx += sin( this.theta ) * 0.1;
-          this.vy += cos( this.theta ) * 0.1;
-
-          this.radius *= 0.96;
-          this.alive = this.radius > 0.5;
-      },
-
-      draw: function( ctx ) {
-
-          ctx.beginPath();
-          ctx.arc( this.x, this.y, this.radius, 0, TWO_PI );
-          ctx.fillStyle = this.color;
-          ctx.fill();
-      }
-      };
-
-      // ----------------------------------------
-      // Example
-      // ----------------------------------------
-
-      var MAX_PARTICLES = 180;
-      var COLOURS = [ '#69D2E7', '#A7DBD8', '#20FC8F', '#F38630', '#FA6900', '#FF4E50', '#009DDC' ];
-
-      var particles = [];
-      var pool = [];
-
-      var demo = Sketch.create({
-      container: document.getElementById( 'container' ),
-      retina: 'auto'
-      });
-
-      demo.setup = function() {
-
-      // Set off some initial particles.
-      var i, x, y;
-
-      for ( i = 0; i < 20; i++ ) {
-          x = ( demo.width * 0.5 ) + random( -100, 100 );
-          y = ( demo.height * 0.5 ) + random( -100, 100 );
-          demo.spawn( x, y );
-      }
-      };
-
-      demo.spawn = function( x, y ) {
-
-      var particle, theta, force;
-
-      if ( particles.length >= MAX_PARTICLES )
-          pool.push( particles.shift() );
-
-      particle = pool.length ? pool.pop() : new Particle();
-      particle.init( x, y, random( 5, 40 ) );
-
-      particle.wander = random( 0.5, 2.0 );
-      particle.color = random( COLOURS );
-      particle.drag = random( 0.9, 0.99 );
-
-      theta = random( TWO_PI );
-      force = random( 2, 8 );
-
-      particle.vx = sin( theta ) * force;
-      particle.vy = cos( theta ) * force;
-
-      particles.push( particle );
-      };
-
-      demo.update = function() {
-
-      var i, particle;
-
-      for ( i = particles.length - 1; i >= 0; i-- ) {
-
-          particle = particles[i];
-
-          if ( particle.alive ) particle.move();
-          else pool.push( particles.splice( i, 1 )[0] );
-      }
-      };
-
-      demo.draw = function() {
-
-      demo.globalCompositeOperation  = 'lighter';
-
-      for ( var i = particles.length - 1; i >= 0; i-- ) {
-          particles[i].draw( demo );
-      }
-      };
-
-      demo.mousemove = function() {
-
-      var particle, theta, force, touch, max, i, j, n;
-
-      for ( i = 0, n = demo.touches.length; i < n; i++ ) {
-
-          touch = demo.touches[i], max = random( 1, 4 );
-          for ( j = 0; j < max; j++ ) {
-            demo.spawn( touch.x, touch.y );
-          }
-
-      }
-      };
-      </script>
-      <script src="js/script.js"></script>
-  </body>
 </html>
