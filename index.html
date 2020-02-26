@@ -1,90 +1,41 @@
 <!DOCTYPE html>
-<!-- dict = {'Tralkoxydim': {
-"rat" : "Tralkoxydim_DAR_04_Vol_3_B6_part-1_public.pdf; pg. 88"
-},
-'Spinetoram': {
-"aerobic soil": "XDE-175(spinetoram)_01_vol1%20(Feb%202012)_public.pdf; pg. 57"
-},
-'Teflubenzuron': {
-"water" : "Teflubenzuron/Teflubenzuron_DAR_01_Vol1_public.pdf; pg. 31",
-"soil" : "Teflubenzuron_DAR_06_Vol3_B8_public.pdf; pg. 241",
-"rat": "Teflubenzuron_DAR_05_Vol3_B7_public.pdf; pg. 175"
-},
-'Tebufenozide': {
-"rat": "Tebufenozide_DAR_01_Vol_1_public.pdf; pg. 19",
-"aerobic soil" : "Tebufenozide_DAR_01_Vol_1_public.pdf; pg. 60",
-"water" : "Tebufenozide_DAR_01_Vol_1_public.pdf; pg. 61",
-"rice" : "Tebufenozide_DAR_06_Vol_3_B7_public.pdf; pg. 289",
-"apple" : "Tebufenozide_DAR_06_Vol_3_B7_public.pdf; pg. 293",
-"goat" : "Tebufenozide_DAR_06_Vol_3_B7_public.pdf; pg. 301"
-},
-'Thiodicarb': {
-"plant" : "Thiodicarb_DAR_05_Vol%203_b7_public.pdf; pg. 224",
-"hen" : "Thiodicarb_DAR_04_Vol%203_b6_public.pdf; pg. 92",
+<!-- 
+import pandas as pd
 
-"monkey" :"Thiodicarb_DAR_04_Vol%203_b6_public.pdf; pg. 92",
-"rat" :"Thiodicarb_DAR_04_Vol%203_b6_public.pdf; pg. 92",
-"goat" :"Thiodicarb_DAR_04_Vol%203_b6_public.pdf; pg. 92"
-"misc" : "Thiodicarb_DAR_06_Vol%203_b8_public.pdf; pg. 299"
-},
-'Tricyclazole': {
-"water": "Tricyclazole_DAR_09_Vol3_B8_public.pdf; pg. 463",
-"chicken" : "Tricyclazole_DAR_08_Vol3_B7_public.pdf",
-"aerobic soil": "Tricyclazole_DAR_07_Volume_3CA_B-8_2013-12-20.pdf; pg. 23"
-},
-'Triclopyr': {
-"ryegrass":"Triclopyr_RAR_01_Volume_1_2018-09-27.pdf; pg. 64",
-"crop" : "Triclopyr_RAR_01_Volume_1_2018-09-27.pdf; pg. 87",
-"aerobic soil" : "Triclopyr_RAR_01_Volume_1_2018-09-27.pdf; pg. 98",
-"anaerobic soil" : "Triclopyr_RAR_01_Volume_1_2018-09-27.pdf; pg. 100"
-},
-'Triasulfuron': {
-"wheat" : "Triasulfuron_RAR_09_Volume_3_B-7_2013-10-21.pdf; pg. 5",
-"animals": "Triasulfuron_RAR_09_Volume_3_B-7_2013-10-21.pdf; pg. 7",
-"crop" : "Triasulfuron_RAR_09_Volume_3_B-7_2013-10-21.pdf; pg. 45",
-"water" : "Triasulfuron_RAR_01_Volume_1_2013-10-21_san.pdf; pg. 22"
-},
-'Sedaxane': {
-"rat": "Sedaxane_DAR_08_Volume%203_B6%20(May%202011)_public.pdf; pg. 45"
-"soil" : "Sedaxane_DAR_10_Volume%203_B8%20(May%202011)_public.pdf; pg. 95"
-"water" : "Sedaxane_DAR_10_Volume%203_B8%20(May%202011)_public.pdf; pg. 177",
-"aerobic soil" : "Sedaxane_DAR_10_Volume%203_B8%20(May%202011)_public.pdf; pg. 194"
-"wheat": "Sedaxane_DAR_09_Volume%203_B7%20(May%202011)_public.pdf; pg. 17",
-"wheat": "Sedaxane_DAR_09_Volume%203_B7%20(May%202011)_public.pdf; pg. 24"
+xl = pd.ExcelFile("test.xlsx")
+df = xl.parse("Sheet1")
+pesticide_name = list(df["Pesticide Name"])
+pesticide_id = list(df["Parent  ID (or Code)"])
+pesticide_smiles = list(df["Parent Isomeric SMILES"])
+pesticide2_id = list(df["Metabolite ID (or Code)"])
+pesticide2_smiles = list(df["Metabolite Isomeric SMILES"])
 
-},
-'Triflusulfuron': {},
-'Triflusulfuron-methyl': {},
-'Terbuthylazine': {},
-'Thymol': {},
-'Trifluralin': {},
-'Tebufenpyrad': {},
-'Triazoxide': {},
-'Tetraconazole': {},
-'Tembotrione': {},
-'Topramezone': {},
-'Triflumuron': {},
-'Spearmint Oil': {},
-'Tribenuron': {},
-'Spirodiclofen': {},
-'Thiobencarb': {},
-'Trichlorfon': {},
-'Triflumizole': {},
-'Thiencarbazone-methyl': {},
-'Tolclofos-methyl': {},
-'Tau-fluvalinate': {},
-'Tri-allate': {},
-'Sulfuryl fluoride': {},
-'Sulcotrione': {},
-'Sulfosulfuron': {},
-'Tebuconazole': {},
-'Sulfoxaflor': {},
-'Tefluthrin': {},
-'Tolylfluanid': {},
-'Spiromesifen': {},
-'Thiabendazole': {}
-}
-print (dict)
+arr = []
+for x in range (len(pesticide_id)):
+    curr_name = pesticide_name[x]
+    curr_id = pesticide_id[x]
+    curr_smiles= pesticide_smiles[x]
+    curr2_id = pesticide2_id[x]
+    curr2_smiles= pesticide2_smiles[x]
+    statement = str(curr_name) + ";;" + str(curr_id) + ";;" + str(curr_smiles)
+    statement = str(curr_name) + ";;" + str(curr2_id) + ";;" + str(curr2_smiles)
+    arr.append(statement)
+print (len(arr))
+no_dups = list(set(arr))
+lst = []
+lst2 =[]
+lst3 =[]
+for item in no_dups:
+    list_ = item.split(";;")
+    lst.append(list_[0])
+    lst2.append(list_[1])
+    lst3.append(list_[2])
+
+df = pd.DataFrame(list(zip(lst, lst2, lst3)),
+               columns =['name', 'id', 'smiles'])
+
+df.to_csv('test_2.csv', header=True, index=False)
+
 
  -->
 
